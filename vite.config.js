@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import { visualizer } from 'rollup-plugin-visualizer';
+
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), visualizer({ open: true })],
   build: {
     rollupOptions: {
       output: {
@@ -10,11 +12,11 @@ export default defineConfig({
           const extType = assetInfo.name?.split('.').pop();
 
           if (extType === 'css') {
-            return 'css/[name]-[hash][extname]';
+            return 'assets/css/[name]-[hash][extname]';
           } else if (extType === 'png' || extType === 'jpg' || extType === 'jpeg' || extType === 'svg') {
-            return 'images/[name]-[hash][extname]';
+            return 'assets/images/[name]-[hash][extname]';
           } else if (extType === 'woff' || extType === 'woff2' || extType === 'ttf' || extType === 'otf' || extType === 'eot') {
-            return 'fonts/[name]-[hash][extname]';
+            return 'assets/fonts/[name]-[hash][extname]';
           }
           return '[name]-[hash][extname]';
         }
