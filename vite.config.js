@@ -4,7 +4,7 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 
 export default defineConfig({
-  plugins: [react(), visualizer({ open: true })],
+  plugins: [react(), visualizer({ open: false })],
   build: {
     rollupOptions: {
       output: {
