@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #302c42;
+  font-family: "Montserrat";
+}
+
+.linear-gradient {
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
+
+.text-shadow {
+  background: linear-gradient(156deg, #c0b7e8 0%, #8176af 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
