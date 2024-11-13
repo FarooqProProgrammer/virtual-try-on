@@ -5,8 +5,8 @@ import Button from '../ui/Button'
 const Hero = () => {
     return (
         <section className="text-gray-600 body-font">
-            <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div className="container mx-auto flex px-5 py-10 lg:flex-row flex-col items-center gap-3">
+                <div className="lg:flex-grow lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h2 className="title-font  sm:text-6xl text-3xl mb-4 font-semibold text-gray-100">
                         <span className='text-shadow'>Dive</span>   into the Depth <br />of  <span className='text-shadow'>virtual reality</span>
                     </h2>
@@ -21,7 +21,7 @@ const Hero = () => {
                         </svg>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-lg xl:w-full lg:w-1/2 w-5/6">
                     <img
                         className="object-cover object-center w-full rounded"
                         alt="hero"

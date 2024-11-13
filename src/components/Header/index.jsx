@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <>
-            <div className='flex justify-between items-center container mx-auto py-5'>
+            <div className='flex justify-between items-center container mx-auto py-5 px-3 sm:px-0'>
                 <img src={Logo} alt="" className='max-w-full object-cover' />
                 <div className=' justify-center items-center gap-7 lg:flex hidden'>
                     <Link to="#!" className='text-white uppercase font-semibold'>About</Link>
